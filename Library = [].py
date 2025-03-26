@@ -1,5 +1,7 @@
+#setup
 Library = []
 
+# Adding Individual BooksI
 books = input("Enter the name of a book you own: ")
 Library.append(books)
 
@@ -10,7 +12,7 @@ else:
  Library == books
 print(f"your Library: {Library}")
 
-
+# Managing the Wishlist
 wishList=[]
 wList = input("Enter the name of a book you wish to have in the future: ")
 wishList.append(wList)
@@ -23,6 +25,7 @@ else:
 
 print(f"Your wishlist: {wishList}")
 
+# Merging Wishlist into Library
 acquired_book = input("Enter the name of a book from your wishlist that you're acquired (or press 'Enter' to skip): ")
 
 if acquired_book in wishList:
@@ -34,6 +37,7 @@ else:
 print(f"Update library: {Library}")
 print(f"Update wishlist: {wishList}")
 
+# Donating Books
 donate_book = input("Enter the name of abook from your library your wish to donate (or press 'Enter' to skip): ")
 if donate_book in Library:
  Library.remove(donate_book)
